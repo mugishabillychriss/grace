@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Design</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and HTML set to full height */
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        /* Welcome message styling */
+        .welcome-message {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Animation to fade in */
+        }
+
+        /* Animation for fading in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container for welcome message -->
+    <div class="welcome-message" id="welcomeMessage">Welcome to Grace Design</div>
+
+    <script>
+        // Redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = "https://mugishabillychriss.github.io/test-for-website/";
+        }, 2000); // 2000ms = 2 seconds
+    </script>
+
+</body>
+</html>
